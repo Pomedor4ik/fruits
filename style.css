@@ -7,6 +7,7 @@ a{
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container{
@@ -70,7 +71,8 @@ header>img{
     width: 328px;
     height: 45px;
     margin-left: 198px;
-    border: none;
+    border-radius: 8px;
+    border: 2px solid black;
 }
 
 .search::placeholder{
@@ -78,8 +80,9 @@ header>img{
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    
-    color: rgb(75, 74, 74);
+    border-radius: 8px;
+    background-color: white;
+    color: rgb(73, 73, 73);
 }
 
 .searchBtn{
