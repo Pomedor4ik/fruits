@@ -23,7 +23,6 @@ header {
 }
 
 header>img{
-    margin-left: 200px;
     height: 49px;
 }
 
@@ -42,74 +41,354 @@ header>img{
 
 .nav-a:hover{
     font-weight: 800;
-    color: rgb(37, 143, 37);
+    color: rgb(62, 197, 62);
 }
 
 .secondHeader{
     width: 100%;
     height: 65px;
     display: flex;
-
     align-items: center;
 }
-
 .menu{
+    display: flex;
+    align-items: center;
     width: 270px;
     height: 50px;
-    background: rgb(37, 165, 37);
+    background: #7FAD39;
+    position: relative;
+}
+.burger{ 
+    width: 18px;
+    height: 12px;
+    margin-left: 23px;
+}
+.menu>ul{ 
+    display: none;
+    position: absolute;
+    top:50px;
+    width: 268px;
+    height: 100px;
+    background-color: #6a912e;
+}
+.menu>p{
+
+
+    width: 100px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+
+}
+.nav>li{ 
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+.nav>li>a{
+    text-align: center;
+    color:rgb(0, 0, 0);
 }
 
-.secondPanel{
+.searchPanel{
     display: flex;
     width: 621px;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid #2A2A2A;
     margin-left: 20px;
 }
-
 .search{
     width: 328px;
-    height: 45px;
-    margin-left: 198px;
-    border-radius: 8px;
-    border: 2px solid black;
+    height:45px;
+    margin-left: 190px;
+    border: none;
 }
-
 .search::placeholder{
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    border-radius: 8px;
-    background-color: white;
-    color: rgb(73, 73, 73);
+    
+    color: rgb(0, 0, 0);
 }
-
 .searchBtn{
     width: 106px;
     height: 50px;
     border: none;
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
 
-    color: white;
-    background: rgb(37, 165, 37);
+    color: #FFFFFF;
+    background: #7FAD39;
 }
-
-.contacts{
+.contacts{ 
     margin-left: 36px;
     display: flex;
     align-items: center;
-}
 
-.contactsICO{
+}
+.contactsIMG{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
-    background: white;
+    background: #F5F5F5;
     border-radius: 50px;
+}
+.contactTextBlock{
+    margin-left: 20px;
+    width: 126px;
+    height: 32px;
+}
+.phoneText{ 
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2A2A2A;
+}
+.phoneText+p{ 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #999999;
+}
+
+.secondContent{
+    display: flex;
+}
+.mainMenu{
+    width: 267px;
+    height: 441px;
+    padding-top: 36px;
+    padding-left: 20px;
+    border: 1px solid rgba(42, 42, 42, 0.2);
+}
+.mainM-item{
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #999999;
+
+}
+.shopNow{ 
+    width: 850px;
+    height: 441px;
+    margin-left: 20px;
+    background: #F5F5F5;
+    position: relative;
+}
+.shopNow>img{ 
+    position: absolute;
+    left: 309px;
+    top:42px
+}
+
+.shopNow>p{
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.shopNow>button{
+    width: 148.71px;
+    height: 50px;
+    left: 77px;
+    top: 304px;
+    border: none;
+    background: #7FAD39;
+    color: white;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.prodacts{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prodact{
+    display: flex;
+    width: 367px;
+    height: 110px;
+    align-items: center;
+}
+
+.prodact>img{
+    width: 110px;
+    height: 110px;
+    margin-right: 20px;
+}
+
+.prodact>div{
+    height: 46px;
+}
+
+.prodactTitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #2A2A2A;
+}
+
+.prodactPrice{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #2A2A2A;
+}
+
+.thirdContainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.freshFruit{
+    width: 270px;
+    height: 300px;
+    left: 390px;
+    top: 658px;
+    
+    background: #F5F5F5;
+}
+
+.freshFruit>img{
+    width: 240px;
+    height: 176px;
+    left: 20px;
+    top: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.freshFruit>button{
+    width: 230px;
+    height: 43px;
+    left: 20px;
+    top: 207px;
+    margin-left: 19px;
+    margin-top: 30px;
+    border: none;
+    background: #FFFFFF;
+}
+
+/* --------------- */
+.driedFruit{
+    width: 270px;
+    height: 300px;
+    left: 390px;
+    top: 658px;
+
+    background: #F5F5F5;
+}
+
+.driedFruit>img{
+    width: 240px;
+    height: 176px;
+    left: 20px;
+    top: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.driedFruit>button{
+    width: 230px;
+    height: 43px;
+    left: 20px;
+    top: 207px;
+    margin-left: 19px;
+    margin-top: 30px;
+    border: none;
+    background: #FFFFFF;
+}
+
+/* -------------------- */
+.vegetables{
+    width: 270px;
+    height: 300px;
+    left: 390px;
+    top: 658px;
+
+    background: #F5F5F5;
+}
+
+.vegetables>img{
+    width: 240px;
+    height: 176px;
+    left: 20px;
+    top: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.vegetables>button{
+    width: 230px;
+    height: 43px;
+    left: 20px;
+    top: 207px;
+    margin-left: 19px;
+    margin-top: 30px;
+    border: none;
+    background: #FFFFFF;
+}
+
+/* ---------------- */
+.drinkFruits{
+    width: 270px;
+    height: 300px;
+    left: 390px;
+    top: 658px;
+
+    background: #F5F5F5;
+}
+
+.drinkFruits>img{
+    width: 240px;
+    height: 176px;
+    left: 20px;
+    top: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.drinkFruits>button{
+    width: 230px;
+    height: 43px;
+    left: 20px;
+    top: 207px;
+    margin-left: 19px;
+    margin-top: 30px;
+    border: none;
+    background: #FFFFFF;
 }
